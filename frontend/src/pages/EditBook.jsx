@@ -18,7 +18,7 @@ function EditBook() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://book-store-backend-jit8.onrender.com/books/${id}`)
       .then((response) => {
         setTitle(response.data.title);
         setPublishYear(response.data.publishYear);
