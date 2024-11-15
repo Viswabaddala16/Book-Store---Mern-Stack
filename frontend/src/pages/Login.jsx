@@ -15,7 +15,7 @@ function Login({ setIsLoggedIn }) {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5555/login', { email, password });
+      const response = await axios.post('https://book-store-backend-jit8.onrender.com/login', { email, password });
       console.log(response.data);
       console.log(response);
       // Assuming the response includes a token or a success message
